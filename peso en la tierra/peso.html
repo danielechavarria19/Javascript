@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peso en la tierra</title>
+</head>
+<body>
+    <h1>Cual es tu peso en el planeta:</h1>
+<script>
+var usuario = prompt("cual es tu peso");
+var planeta = parseInt(prompt("Elige tu planeta \n 1 es venus, 2 es neptuno"));
+var peso = parseInt(usuario);
+var gTierra = 9.8;
+var gVenus = 8.8;
+var gNeptuno = 11.5;
+var nombre;
+var pesoFinal
+
+if(planeta == 1){
+   pesoFinal = peso*gVenus/gTierra;
+    nombre = "Venus";
+}else if(planeta == 2){
+   pesoFinal = peso*gNeptuno/gTierra;
+    nombre = "Neptuno"
+}else{
+    pesoFinal = 10000000;
+    nombre = "El planeta no es el correcto";
+}
+pesoFinal = parseInt(pesoFinal);
+document.write("Tu peso en " + nombre + " es de " + pesoFinal + " kilos");
+</script>
+</body>
+</html>

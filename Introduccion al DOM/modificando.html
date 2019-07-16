@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modificando estilos de los elementos</title>
+    <style>
+    .titulo{
+        border: 1px solid #000000;
+        background: #ccc;
+        padding: 10px;
+    }
+    .tituloGrande{
+        font-size: 60px;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="encabezado" class="titulo tituloGrande">Soy un encabezado</h1>
+<script>
+   var encabezado = document.getElementById("encabezado");
+   encabezado.className = encabezado.className.replace("tituloGrande", "");
+
+</script>
+</body>
+</html>

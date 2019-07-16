@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="leer">
+    <button id="add">agregar</button>
+    <ul id="lista"><li>
+
+    </li></ul>
+    <script>
+ const input = document.getElementById('leer');
+ const boton = document.getElementById('add');
+ const lista = document.getElementById('lista');
+
+ var frutas = [
+     {nombre: "bananos", cantidad: 23},
+     {nombre: "lulos", cantidad: 10},
+     {nombre: "cocos", cantidad: 0}
+ ];
+
+ for(var fruta of frutas){
+    fruta.nombre,
+    fruta.cantidad;
+ }
+ if(fruta.cantidad === 0){
+  `<p>no tienes dinero</p>`
+ }
+ 
+ lista.innerHTML = `<li>${fruta.nombre} - ${fruta.cantidad}</li>`
+    </script>
+</body>
+</html>

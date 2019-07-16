@@ -1,0 +1,42 @@
+body{
+    background-image: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1411/Trees-yellow-leaves-autumn-blur-nature_1920x1200.jpg);  
+}
+
+h3{
+    text-align: center;
+    color: #636363;
+}
+
+.textoN{
+    margin-top: 20px;
+}
+
+.texto{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.textoE{
+    margin-top: 10px;
+    margin-bottom: 7px;
+    width: 100px;
+}
+
+.woman{
+    margin-left: 10px;
+}
+
+.send{
+    margin-top: 7px;
+    display: block;
+}
+
+.caja{
+    background: rgba(231, 231, 231, 60%);
+    padding-bottom: 20px;
+    border: 0.5px solid #696868c4;
+    justify-content: center;
+    margin-left: 25%;
+    width: 600px;
+    margin-top: 5%;
+}

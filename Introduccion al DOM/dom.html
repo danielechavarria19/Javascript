@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nodos</title>
+</head>
+<body>
+<ol id="lista">
+    <li>Texto tal</li>
+    <li>Texto tal 2</li>
+</ol>
+<script>
+var elemento = document.createElement("li");
+var contenido = document.createTextNode("Se agregó a la lista");
+elemento.appendChild(contenido);
+
+//Otra opcion para llamar al elemento padre es:
+// var padre = document.getElementByTagName("li")[0].parentNode;
+// var primerElemento = document.getElementsByTagName("li")[0];
+// padre.insertBefore(elemento, primerElemento)
+
+var padre = document.getElementById("lista");
+padre.appendChild(elemento);
+
+</script>
+</body>
+</html>

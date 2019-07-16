@@ -1,0 +1,43 @@
+[
+    {
+        "usuario": 1,
+        "nombre": "Rafael",
+        "apellido": "Fuentes",
+        "calificacion": "Excelente"
+    },
+
+    {
+        "usuario": 2,
+        "nombre": "Laura",
+        "apellido": "Castaño",
+        "calificacion": "Sobresaliente"
+    },
+
+    {
+        "usuario": 3,
+        "nombre": "Carlos",
+        "apellido": "Gonzales",
+        "calificacion": "Aceptable"
+    },
+
+    {
+        "usuario": 4,
+        "nombre": "Andrés",
+        "apellido": "Urrego",
+        "calificacion": "Excelente"
+    },
+
+    {
+        "usuario": 5,
+        "nombre": "Julian",
+        "apellido": "Garcia",
+        "calificacion": "Insuficiente"
+    },
+
+    {
+        "usuario": 6,
+        "nombre": "Luis",
+        "apellido": "Zapata",
+        "calificacion": "Excelente"
+    }
+]

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica DOM</title>
+    <style>
+
+    .thumb{
+        width: 200px;
+        transition: 300ms all ease;
+    }
+
+    .grande{
+        width: 400px;
+    }
+    </style>
+</head>
+<body>
+<img class="thumb" id="thumb" src="https://t2.kn3.net/taringa/3/6/4/9/9/2/Mariaxhe/0D6.jpg" width="400" alt="Paisaje">
+<form action="">
+    <input type="button" value="+" onclick="zoom();">
+</form>
+
+<!--Lógica-->
+    <script>
+        var zoom = function(){
+            var thumb = document.getElementById("thumb");
+            if(thumb.className == "thumb"){
+            thumb.className = "thumb grande";
+            }else{
+                thumb.className = "thumb";
+            }   
+        }
+    </script>
+</body>
+</html>

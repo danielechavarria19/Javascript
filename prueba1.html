@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prueba</title>
+    <style>
+       .colorRojo{
+           color: red;
+       }
+
+       .colorVerde{
+           color: green;
+       }
+
+       .colorMorado{
+           color: purple;
+       }
+
+       .colorAzul{
+           color: navy;
+       }
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Color elegido</h1>
+    <input type="text" id="texto">
+    <button id="btn">Presiona</button>
+
+    <script>
+    document.getElementById("btn").onclick = function(){
+        var colores = document.getElementById("texto").value;
+
+        if(colores == "rojo"){
+            document.getElementById("titulo").classList.add("colorRojo");
+        }else if
+            (colores == "verde"){
+                document.getElementById("titulo").classList.add("colorVerde");
+            }
+        }
+    
+    </script>
+</body>
+</html>

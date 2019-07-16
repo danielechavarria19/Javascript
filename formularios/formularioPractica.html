@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>formulario Prac</title>
+</head>
+<body> 
+    <br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 caja">
+            <h3>Completa los siguientes datos</h3>
+        <form action="" name="formulario" method="get" class="">
+                <input type="text" placeholder="Nombre:" maxlength="30" name="nombre" id="nombre" class="form-control textoN">
+
+                <input type="text" placeholder="Apellido:" maxlength="15" name="apellido" id="apellido" class="form-control texto">
+
+                <input type="text" placeholder="Edad:" maxlength="2" name="edad" id="edad" class="form-control textoE">
+
+                <input type="radio" name="sexo" id="hombre" value="Hombre" class="">Hombre 
+               <span class="woman"><input type="radio" name="sexo" id="mujer" value="Mujer">Mujer</span>
+                <br>
+
+                <input type="checkbox" name="terminos" id="terminos" class="terminosC">Acepto Terminos y Condiciones
+                
+               <input type="submit" id="btn" name="btn" value="Enviar" class="btn btn-primary send">
+            </form>
+        </div>
+    </div>
+</div>
+<!--Código Javascript-->
+<script>
+    (function(){
+        var formulario = document.getElementsByName('formulario')[0];
+        var elementos = formulario.elements
+        var boton = document.getElementById('btn');
+
+        var validarNombre = function(e){
+            if(formulario.nombre.value == 0){
+                alert("Debes completa el campo Nombre");
+                e.preventDefault();
+            }
+        }
+
+        var validarApellido = function(e){
+            if(formulario.apellido.value == 0){
+                alert("Debes completa el campo Apellido");
+                e.preventDefault();
+            }
+        }
+
+        var validarEdad = function(e){
+            if(formulario.edad.value == 0){
+                alert("Debes completar el campo Edad");
+                e.preventDefault();
+            }
+        }
+
+        var validarSexo = function(e){
+            if(formulario.sexo[0].checked == true || formulario.sexo[1].checked == true){
+
+            }else{
+                alert("Debes seleccionar un sexo");
+                e.preventDefault();
+            }
+        }
+
+        var validarTerminos = function(e){
+            if(formulario.terminos.checked == false){
+                alert("Acepta los terminos y condiciones");
+                e.preventDefault();
+            }
+        }
+        
+        var validar = function(e){
+            validarNombre(e);
+            validarApellido(e);
+            validarEdad(e);
+            validarSexo(e);
+            validarTerminos(e);
+        }
+        formulario.addEventListener("submit", validar);
+    }())
+</script>
+
+<!--Libreria Booststrap-->
+ <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+</body>
+</html>

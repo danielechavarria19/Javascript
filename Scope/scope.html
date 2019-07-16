@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Scope de javascript</title>
+</head>
+<body>
+<script>
+	//Global
+	var variableGlobal = "Esta es la global";
+
+	var glo = function(){
+		//var nuevavariable = "Probando la local";
+		alert(nuevavariable);
+
+		var nuevalocal = function(){
+			//var anidada = "Puedo ingresar local";
+			alert(anidada);
+		}
+		nuevalocal();
+	}
+	
+	glo();
+
+	//Locales
+</script>
+</body>
+</html>

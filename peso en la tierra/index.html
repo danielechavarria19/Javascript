@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcula el peso</title>
+</head>
+<body>
+    <h1>Cual es tu peso en los diferentes planetas</h1>
+
+<script>
+var usuario = prompt("cual es tu peso?")
+var planeta = parseInt(prompt("Elige tu planeta\n 1 es marte, 2 es jupiter"));
+var peso = parseInt(usuario);
+var gTierra = 9.8;
+var gMarte = 3.7;
+var gJupiter = 24.8;
+var nombre;
+var pesoFinal;
+
+if(planeta == 1){
+    pesoFinal = peso * gMarte/gTierra;
+    nombre = "marte"
+}else if(planeta == 2){
+    pesoFinal = peso * gJupiter/gTierra;
+    nombre = "jupiter"
+}else{
+    pesoFinal = 1000000;
+    nombre = "el planeta equivocado"
+}
+
+pesoFinal = parseInt(pesoFinal);
+document.write("Tu peso en " + nombre + " es <strong>" + pesoFinal + " kilos </strong>");
+
+
+
+
+</script>
+</body>
+</html>

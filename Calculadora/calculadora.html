@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		.caja{
+			width: 350px;
+			height: 200px;
+		}
+		.boton1{
+			margin-top: 10px;
+			background-color: gray;
+			color: white;
+		}
+
+	</style>
+</head>
+<body> <!--Estructura-->
+	<br>
+<div class="container">
+	<div class="caja">
+	<form>
+		<input type="text" id="numero1" class="form-control" class="barra1" placeholder="Coloca número para sumar">
+		<input type="text" id="numero2" class="form-control" class="barra2" placeholder="Coloca número para sumar">
+		<input type="button" value="Sumar" onclick="alert( suma() );" class="btn boton1">
+	</form>
+	</div>
+</div>
+	<!--Lógica-->
+<script>
+	var suma = function(numero1, numero2){
+		var numero1 = parseInt(document.getElementById("numero1").value);
+		var numero2 = parseInt(document.getElementById("numero2").value);
+
+		var resultado = numero1 + numero2;
+		return resultado;
+	}
+
+</script>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

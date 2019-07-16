@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reemplazar nodos</title>
+</head>
+<body>
+    <ol id="lista">
+        <li id="primero">Acá el primer texto</li>
+        <li>Acá va el segundo texto</li>
+    </ol>
+    <script>
+       // var primerElemento = document.getElementById("primero");
+        // primerElemento.innerHTML = "Saludando <i class = 'estilo'>Probando</i>";
+
+      var elemento = document.createElement("li");
+            var contenedor = document.createTextNode("El nombre es importante");
+            elemento.appendChild(contenedor);
+
+        var padre = document.getElementsByTagName("li")[0].parentNode;
+        var referencia = document.getElementsByTagName("li")[0];
+        padre.removeChild(referencia);
+
+    </script>
+</body>
+</html>
